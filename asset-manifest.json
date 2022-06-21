@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/CalenderSearchApp/static/css/main.cc139db3.css",
+    "main.js": "/CalenderSearchApp/static/js/main.68c707f3.js",
+    "static/js/787.713a1642.chunk.js": "/CalenderSearchApp/static/js/787.713a1642.chunk.js",
+    "static/media/nature2.jpg": "/CalenderSearchApp/static/media/nature2.add92fb5926144c9a72b.jpg",
+    "index.html": "/CalenderSearchApp/index.html",
+    "main.cc139db3.css.map": "/CalenderSearchApp/static/css/main.cc139db3.css.map",
+    "main.68c707f3.js.map": "/CalenderSearchApp/static/js/main.68c707f3.js.map",
+    "787.713a1642.chunk.js.map": "/CalenderSearchApp/static/js/787.713a1642.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cc139db3.css",
+    "static/js/main.68c707f3.js"
+  ]
+}
