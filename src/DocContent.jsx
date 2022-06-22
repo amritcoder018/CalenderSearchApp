@@ -1,21 +1,27 @@
+import nature1 from './dm.jpg';
+import nature2 from './10mark.jpg';
+import nature3 from './10pass.jpg';
+import nature4 from './dc.jpg';
+import nature5 from './btech.jpg';
+import nature6 from './btechm.jpg';
 const Content=[
     {id:1,
-    src:"./ball.png",
+    src:  nature3,
     heading:"10th Pass Certificate"},
     {id:2,
-        src:"./10mark.jpg",
+        src:nature2,
         heading:"10th Marksheet"},
         {id:3,
-            src:"./logo192.png",
+            src:nature4,
             heading:"Diploma Certificate"},
             {id:4,
-                src:"./dm.jpg",
+                src:nature1,
                 heading:"Dimploma MarkSheet"},
                 {id:5,
-                    src:"./btech.jpg",
+                    src:nature5,
                     heading:"B Tech Certificate"},
                     {id:6,
-                        src:"./btechm.jpg",
+                        src:nature6,
                         heading:"BTech Marksheet"},
      
     

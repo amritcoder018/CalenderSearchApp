@@ -6,12 +6,18 @@ import Aboutme from './Aboutme';
 import Contact from './Contact';
 import Documents from './Documents';
 import AboutPro from './AboutProject';
+// import nature from '../public/images/nature.jpg';
 function App() {
-
+  const resetcol=(key)=>{let x={
+    a:"black",b:"black",c:"black",d:"black",e:"black"
+   };
+  x[key]="#00960080";
+  return x;
+  };
  const para="Hi, I am Amrit Kumar Sharma .I was born and brought up in jamshedpur, Jharkhand.I have completed My btech graduation degree from KIIT University ,Bhubaneswar in Electrical Enginnering. I have also completed diploma in engineering from KIIT Polytechnic,Bhubaneswar.I have completed many certifications courses like autocad electrical,PLC,sql,core java,j2ee and hibernate. I know programing languages like java,c,c++,python.I have completed webtech cource which includes html5,css,javascript.  I like spending free time by listening music,reading books,watching youtube videos and coding.Currently i am pursuing full stack java development cource in Qspider institute.I am seeking for a decent job in IT sector to grow in my carrer. ";
 
  const[ctime,setctime]=useState(new Date().toLocaleTimeString());
- const [msg,setmsg]=useState("Welcome to My Callender");
+ const [msg,setmsg]=useState("Welcome to My Calendar");
   const [show ,setshow]=useState(false); 
   const [show1 ,setshow1]=useState(false); 
   const [year,setyear]=useState(2022); 
@@ -19,10 +25,11 @@ function App() {
   const [month,setmonth]=useState(0);
   const [start,setstart]=useState(0);
   const [end, setend]=useState(30);
- const [col1 ,setcol1]=useState({
-  a:"#00960080",b:"#ffffff00",c:"#ffffff00",d:"#ffffff00",e:"#ffffff00"
- });
-  
+ const [col1 ,setcol1]=useState(resetcol('a'));
+
+
+
+  // console.log(nature);
 const updateTime=()=>{
 setctime(new Date().toLocaleTimeString());
 
@@ -30,9 +37,7 @@ setctime(new Date().toLocaleTimeString());
 setInterval(updateTime,1000);
 
   const clicked=()=>{
-    setcol1({
-      a:"#00960080",b:"#ffffff00",c:"#ffffff00",d:"#ffffff00",e:"#ffffff00"
-     });
+    setcol1(resetcol('a'));
     navigate("/");
     setTimeout(()=>{
       
@@ -81,9 +86,7 @@ let navigate=useNavigate();
     if(event.target.id==="a1")
    {
     setcol1(
-      {
-        a:"#ffffff00",b:"#00960080",c:"#ffffff00",d:"#ffffff00",e:"#ffffff00"
-       }
+     resetcol('b')
       );
    
     navigate("Aboutme");
@@ -91,33 +94,33 @@ let navigate=useNavigate();
     } 
    else if(event.target.id==="a2")
     {
-      setcol1({
-        a:"#00960080",b:"#ffffff00",c:"#ffffff00",d:"#ffffff00",e:"#ffffff00"
-       });
+      setcol1(
+        resetcol('a')
+         );
      
     navigate("/");
      }
      else if(event.target.id==="a3")
      {
-      setcol1({
-        a:"#ffffff00",b:"#ffffff00",c:"#00960080",d:"#ffffff00",e:"#ffffff00"
-       });
+      setcol1(
+        resetcol('c')
+         );
        navigate("doc");
        
      } 
      else if(event.target.id==="a4")
      {
-      setcol1({
-        a:"#ffffff00",b:"#ffffff00",c:"#ffffff00",d:"#00960080",e:"#ffffff00"
-       });
+      setcol1(
+        resetcol('d')
+         );
        navigate("contact");
      
      } 
      else if(event.target.id==="a5")
      {
-      setcol1({
-        a:"#ffffff00",b:"#ffffff00",c:"#ffffff00",d:"#ffffff00",e:"#00960080"
-       });
+      setcol1(
+        resetcol('e')
+         );
        navigate("pro");
      
      } 

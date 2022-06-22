@@ -4,7 +4,7 @@ function AboutPro(prop)
 {
 
     return (<div class="about pro">
-    <h1>About Me</h1>
+    <h1>About the Project</h1>
     <p>Content Not Written yet</p>
 
 </div>);
