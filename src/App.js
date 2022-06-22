@@ -6,6 +6,7 @@ import Aboutme from './Aboutme';
 import Contact from './Contact';
 import Documents from './Documents';
 import AboutPro from './AboutProject';
+import Searchbar from './Searchbar';
 // import nature from '../public/images/nature.jpg';
 function App() {
   const resetcol=(key)=>{let x={
@@ -14,6 +15,8 @@ function App() {
   x[key]="#00960080";
   return x;
   };
+  let navigate=useNavigate();
+  
  const para="Hi, I am Amrit Kumar Sharma .I was born and brought up in jamshedpur, Jharkhand.I have completed My btech graduation degree from KIIT University ,Bhubaneswar in Electrical Enginnering. I have also completed diploma in engineering from KIIT Polytechnic,Bhubaneswar.I have completed many certifications courses like autocad electrical,PLC,sql,core java,j2ee and hibernate. I know programing languages like java,c,c++,python.I have completed webtech cource which includes html5,css,javascript.  I like spending free time by listening music,reading books,watching youtube videos and coding.Currently i am pursuing full stack java development cource in Qspider institute.I am seeking for a decent job in IT sector to grow in my carrer. ";
 
  const[ctime,setctime]=useState(new Date().toLocaleTimeString());
@@ -38,15 +41,17 @@ setInterval(updateTime,1000);
 
   const clicked=()=>{
     setcol1(resetcol('a'));
-    navigate("/");
+    navigate("/CalenderSearchApp");
+    if(!isNaN(value)){
     setTimeout(()=>{
-      
-        setyear(value);
+    
+     setyear(value);
       setshow(true);
+      
       
     },1000);
       
-  
+    }
    window.scrollTo(0,0);
    
     };
@@ -54,9 +59,14 @@ setInterval(updateTime,1000);
     const func2=()=>{ 
       setshow(false);
       setshow1(false);
-      if(value=="")
-      {setvalue(2022);
-     } setmsg("YEAR >> "+value);
+      if(value==="" || isNaN(value))
+      {
+        alert("Please enter only Year in Number formate (YYYY)");
+        setmsg("Welcome to My Calendar");
+      }
+      else{
+      setmsg("YEAR >> "+value);
+      }
     
     }
     
@@ -81,7 +91,8 @@ setInterval(updateTime,1000);
    setshow1(false);
  };
  
-let navigate=useNavigate();
+
+
   const over=(event)=>{
     if(event.target.id==="a1")
    {
@@ -98,7 +109,7 @@ let navigate=useNavigate();
         resetcol('a')
          );
      
-    navigate("/");
+    navigate("/CalenderSearchApp");
      }
      else if(event.target.id==="a3")
      {
@@ -131,11 +142,12 @@ let navigate=useNavigate();
   };
   return (
     <>
-    <Header  col1={col1}  over={over} func2={func2} func={clicked} changing={changing} />
+    <Header  col1={col1}  clname="search-bar1" over={over} func2={func2} func={clicked} changing={changing} />
+    <div className="mobile"><Searchbar clname="search-bar2" func2={func2} func={clicked} changing={changing}/></div>
     <div className='back'>
     <Routes>
    
-    <Route path="/" element={<Home backf={backf} ctime={ctime} func2={func2} func={clicked} show1={show1} show={show} msg={msg} year={year} start={start} stop={end} month={month} enlarge={enlarge} changing={changing}/>}/>
+    <Route path="/CalenderSearchApp" element={<Home backf={backf} ctime={ctime} func2={func2} func={clicked} show1={show1} show={show} msg={msg} year={year} start={start} stop={end} month={month} enlarge={enlarge} changing={changing}/>}/>
      <Route path="aboutme" element={<Aboutme para={para}/>}/>
      <Route path="contact" element={<Contact/>}/>
      <Route path="doc" element={<Documents/>}/>

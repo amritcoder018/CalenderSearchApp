@@ -35,7 +35,7 @@ body{
   width: 6rem;
   height: 6rem;
   background-color: #eeee;
-  box-shadow: 2.5px 2.5px 6px 0.1px black;
+  box-shadow: 2.5px 2.5px 6px 0.1px rgb(19, 19, 19);
   text-align: center;
   padding-top:1.3rem;
   font-size: 3rem;
@@ -172,8 +172,19 @@ gap:2.14rem;
 grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
 }
 
-
-
+.mobile{
+  display: flex;
+  padding-top:1.3rem ;
+  justify-content: center;
+}
+.mobile .search-bar{
+  background-color: darkblue;
+  width: fit-content;
+ 
+}
+.mobile .search-bar input{
+  width: 30rem;
+}
 
 .initmsg{
   color:white;
