@@ -9,7 +9,7 @@ function CreateCalender(prop)
 const months=Allmonths(prop.year);
 
 const mapMonths=(prop1,index)=>{
- return (<CreateMonth backshow={false} show1={prop.show1} x="1" classn="month-block" clicked={prop.clicked} mon={prop1.month} start={prop1.day} stop={prop1.lastday} year={prop.year} id={index}/>);   
+ return (<CreateMonth key={prop1.id} db={"cal"} backshow={false} show1={prop.show1} x="1" classn="month-block" clicked={prop.clicked} mon={prop1.month} start={prop1.day} stop={prop1.lastday} year={prop.year} id={index}/>);   
 };
 
 

@@ -11,7 +11,7 @@ function Header(prop)
     return (<div className='header1'>
         <Logo url={icon} alt="logo.png"/>
         <Navbar col1={prop.col1} overmain={prop.over}/>
-        <Searchbar clname={prop.clname} func2={prop.func2} func={prop.func} changing={prop.changing}/>
+        <Searchbar value={prop.value} clname={prop.clname} func2={prop.func2} func={prop.func} changing={prop.changing}/>
     </div>);
 }
 

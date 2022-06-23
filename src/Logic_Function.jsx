@@ -46,6 +46,7 @@ function Month(prop){
     {
         let d=new Date(year+"-"+i+"-01");
         dayinfo.push({
+            id:i,
             day:d.getDay(),
             month:d.getMonth(),
             lastday:daysinmonth(d.getMonth(),year)

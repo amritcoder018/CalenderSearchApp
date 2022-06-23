@@ -7,6 +7,7 @@
   /* font-family: 'Alfa Slab One', cursive; */
 }
 
+
 html{
   font-size: 62.5%;
 }
@@ -16,6 +17,12 @@ body{
 
   background-attachment: fixed;
   background-size: 100% 100%;
+}
+
+header{
+  position: sticky;
+  top:0;
+  z-index: 1;
 }
 
 .dateblock1{
@@ -63,13 +70,17 @@ body{
   padding: 1rem;
   display: grid;
   margin-top: 1rem;
-  background-color:#f7f7f7;
+  
  gap:0.8rem;
 
   grid-template-rows:    repeat(5, 1fr);
 grid-template-columns: repeat(7, 1fr);
 border-bottom-left-radius: 2rem;
 border-bottom-right-radius: 2rem;
+}
+
+.single{
+  background-color:#eeee;
 }
 .month-block{
   width:fit-content;
@@ -95,6 +106,15 @@ animation-direction: normal;
 
 
 }
+.cal{
+  background-color: #eeee;
+}
+.month-block .cal:active{
+  background-color: yellowgreen;
+  transition-duration: 1s;
+transition-timing-function: ease-out;
+}
+
 .single-month{
   width:fit-content;
   height:fit-content;
@@ -173,17 +193,44 @@ grid-template-columns: repeat(auto-fit, minmax(26rem,1fr));
 }
 
 .mobile{
+
   display: flex;
+  padding-left: 2rem;
+  position: sticky;
+  top:1;
   padding-top:1.3rem ;
-  justify-content: center;
+  justify-content: space-between;
 }
-.mobile .search-bar{
-  background-color: darkblue;
-  width: fit-content;
+
+.mobile .backbutton{
+  background-color: rgb(145, 240, 208);
+  width: 20rem;
+  text-align: center;
  
+  font-size: 2rem;
+  height: 3.7rem;
+  align-self: center;
+  border: 0.2rem solid green;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.7rem 0.1rem aquamarine ;
 }
-.mobile .search-bar input{
-  width: 30rem;
+.mobile .backbutton i
+  {
+    font-size: 2rem;
+    
+
+  }
+.mobile .backbutton:hover{
+  background-color: rgb(159, 244, 216);
+}
+.mobile .backbutton:active{
+  background-color:rgb(159, 244, 216);
+  box-shadow: 0 0 1.6rem 0.1rem aquamarine ;
+}
+.mobile .backbutton:active i{
+  transition-duration:0.2s ;
+  transition-timing-function: ease-out;
+  transform: translateX(-3rem);
 }
 
 .initmsg{
@@ -294,10 +341,20 @@ max-height: 50rem;
   transition-duration: 0.2s;
   transition-timing-function: ease-in;
 }
+.backbut i{
+  font-size: 2rem;
+
+}
+
 .backbut:hover{
   transform: scale(1.1);
   color:white;
   box-shadow: 0 0 1rem 0.1rem black;
+}
+.backbut:hover i{
+  transition-duration:0.2s ;
+  transition-timing-function: ease-out;
+  transform: translateX(-1rem);
 }
 
 
@@ -347,4 +404,5 @@ max-height: 50rem;
         
         }
       }
-    
+
+   

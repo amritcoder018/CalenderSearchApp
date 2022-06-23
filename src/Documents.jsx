@@ -8,7 +8,7 @@ function Documents()
  return <Document key={prop.id} heading={prop.heading} src={prop.src}  />
  }
 
-    return (<div class="about">
+    return (<div className="about">
     <h1>Documents</h1>
     {Content.map(mapfuc)}
 </div>);

@@ -3,7 +3,7 @@ import React from 'react';
 function Contact()
 {
 
-    return (<div class="about">
+    return (<div className="about">
     <h1>Contact Details:-</h1>
     <h4><span>Email id:</span> amritkr.sharma018@gmail.com</h4>
     <h4><span>Contact No:-</span> +91-8210603236</h4>
