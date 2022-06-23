@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/CalenderSearchApp/static/css/main.7d4b2f80.css",
+    "main.css": "/CalenderSearchApp/static/css/main.13fc2c4f.css",
     "main.js": "/CalenderSearchApp/static/js/main.701eff25.js",
     "static/js/787.713a1642.chunk.js": "/CalenderSearchApp/static/js/787.713a1642.chunk.js",
     "static/media/nature2.jpg": "/CalenderSearchApp/static/media/nature2.add92fb5926144c9a72b.jpg",
@@ -11,12 +11,12 @@
     "static/media/10pass.jpg": "/CalenderSearchApp/static/media/10pass.55e6e7345df8405d16cb.jpg",
     "static/media/10mark.jpg": "/CalenderSearchApp/static/media/10mark.573456aa0c061de2472b.jpg",
     "index.html": "/CalenderSearchApp/index.html",
-    "main.7d4b2f80.css.map": "/CalenderSearchApp/static/css/main.7d4b2f80.css.map",
+    "main.13fc2c4f.css.map": "/CalenderSearchApp/static/css/main.13fc2c4f.css.map",
     "main.701eff25.js.map": "/CalenderSearchApp/static/js/main.701eff25.js.map",
     "787.713a1642.chunk.js.map": "/CalenderSearchApp/static/js/787.713a1642.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d4b2f80.css",
+    "static/css/main.13fc2c4f.css",
     "static/js/main.701eff25.js"
   ]
 }
