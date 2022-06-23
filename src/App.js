@@ -7,6 +7,7 @@ import Contact from './Contact';
 import Documents from './Documents';
 import AboutPro from './AboutProject';
 import Searchbar from './Searchbar';
+import Gohome from './Gohome';
 // import nature from '../public/images/nature.jpg';
 function App() {
  
@@ -31,6 +32,7 @@ const defmsg="Welcome to My Calendar";
   const [start,setstart]=useState(0);
   const [end, setend]=useState(30);
  const [col1 ,setcol1]=useState(resetcol('a'));
+
 
 
 
@@ -63,7 +65,7 @@ setInterval(updateTime,1000);
     const func2=()=>{ 
       setshow(false);
       setshow1(false);
-      
+   
       if(value==="" || (value.length<4) || isNaN(value))
       {
         setTimeout(()=>{
@@ -90,6 +92,7 @@ setInterval(updateTime,1000);
  
    setshow1(true);
     setshow(false);
+
    const daycount=[31,28,31,30,31,30,31,31,30,31,30,31];
  
     const date=new Date(year+"-"+(id+1)+"-01");
@@ -166,8 +169,7 @@ setInterval(updateTime,1000);
     <>
    <header>
    <Header  col1={col1} value={value} clname="search-bar1" over={over} func2={func2} func={clicked} changing={changing} />
-    <div className="mobile"><button onClick={()=>{deflt();
-    }} className="backbutton"><i className="fa-solid fa-arrow-left-long"></i>Go Home</button><Searchbar value={value} clname="search-bar2" func2={func2} func={clicked} changing={changing}/></div>
+    <div className="mobile"><Gohome vis={show||show1} deflt={deflt}/><Searchbar value={value} clname="search-bar2" func2={func2} func={clicked} changing={changing}/></div>
    </header>
     <div className='back'>
     <Routes>

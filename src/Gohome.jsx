@@ -4,7 +4,7 @@ import React from 'react';
 
 function Gohome(prop)
 {
-    return (<button onClick={prop.def} className="backbutton"><i className="fa-solid fa-arrow-left-long"></i>Go Home</button>);
+    return prop.vis?(<button onClick={prop.deflt} className="backbutton"><i className="fa-solid fa-arrow-left-long"></i>Go Home</button>):null;
 
 }
 
