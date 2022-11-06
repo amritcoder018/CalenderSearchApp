@@ -1,22 +1,16 @@
 {
   "files": {
-    "main.css": "/CalenderSearchApp/static/css/main.2a3248e1.css",
-    "main.js": "/CalenderSearchApp/static/js/main.dbc6dcce.js",
+    "main.css": "/CalenderSearchApp/static/css/main.7d4b2f80.css",
+    "main.js": "/CalenderSearchApp/static/js/main.a4722421.js",
     "static/js/787.713a1642.chunk.js": "/CalenderSearchApp/static/js/787.713a1642.chunk.js",
     "static/media/nature2.jpg": "/CalenderSearchApp/static/media/nature2.add92fb5926144c9a72b.jpg",
-    "static/media/dm.jpg": "/CalenderSearchApp/static/media/dm.0ac6fd6a78d23bc8dfd9.jpg",
-    "static/media/btechm.jpg": "/CalenderSearchApp/static/media/btechm.009fac5aafbfa48932a6.jpg",
-    "static/media/dc.jpg": "/CalenderSearchApp/static/media/dc.79aee8ba4e59d68daf31.jpg",
-    "static/media/btech.jpg": "/CalenderSearchApp/static/media/btech.1eb690b7c0fb50ba8b17.jpg",
-    "static/media/10pass.jpg": "/CalenderSearchApp/static/media/10pass.55e6e7345df8405d16cb.jpg",
-    "static/media/10mark.jpg": "/CalenderSearchApp/static/media/10mark.573456aa0c061de2472b.jpg",
     "index.html": "/CalenderSearchApp/index.html",
-    "main.2a3248e1.css.map": "/CalenderSearchApp/static/css/main.2a3248e1.css.map",
-    "main.dbc6dcce.js.map": "/CalenderSearchApp/static/js/main.dbc6dcce.js.map",
+    "main.7d4b2f80.css.map": "/CalenderSearchApp/static/css/main.7d4b2f80.css.map",
+    "main.a4722421.js.map": "/CalenderSearchApp/static/js/main.a4722421.js.map",
     "787.713a1642.chunk.js.map": "/CalenderSearchApp/static/js/787.713a1642.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a3248e1.css",
-    "static/js/main.dbc6dcce.js"
+    "static/css/main.7d4b2f80.css",
+    "static/js/main.a4722421.js"
   ]
 }
