@@ -1,27 +1,22 @@
-import nature1 from './dm.jpg';
-import nature2 from './10mark.jpg';
-import nature3 from './10pass.jpg';
-import nature4 from './dc.jpg';
-import nature5 from './btech.jpg';
-import nature6 from './btechm.jpg';
+import nature1 from './download.jpeg';
 const Content=[
     {id:1,
-    src:  nature3,
+    src:  nature1,
     heading:"10th Pass Certificate"},
     {id:2,
-        src:nature2,
+        src:nature1,
         heading:"10th Marksheet"},
         {id:3,
-            src:nature4,
+            src:nature1,
             heading:"Diploma Certificate"},
             {id:4,
                 src:nature1,
                 heading:"Dimploma MarkSheet"},
                 {id:5,
-                    src:nature5,
+                    src:nature1,
                     heading:"B Tech Certificate"},
                     {id:6,
-                        src:nature6,
+                        src:nature1,
                         heading:"BTech Marksheet"},
      
     
